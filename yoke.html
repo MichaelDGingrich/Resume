@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Spin-off of "Spin-off of "Challenge: You can learn text tags""Challenge: You can learn text tags""</title>
+        <meta charset="utf-8">
+    </head>
+    <body onLoad="init();">
+
+    <style>
+        body{background-color:#403843  ;
+        }        
+        hr{border-color:red;}
+        h1{color:white;}
+        h2{color:lime;}
+        h2{background-color:darkblue;}
+        li{color:lime;}
+         p{color:lime;}
+         div{border-style:solid;}  
+    </style>
+    
+    
+    <h1 align ="center"><font size="90">Resume</font></h1>
+  
+   <hr>
+   <img  src="https://michaeldgingrich.github.io/five/photo.jpeg">
+   
+   
+   
+   
+   <canvas id="myCanvas" width="300" height="300" >
+  </canvas>
+<script>
+    var context;
+var x=100;
+var y=200;
+var dx=5;
+var dy=5;
+
+function init()
+{
+  context= myCanvas.getContext('2d');
+  setInterval(draw,10);
+}
+
+function draw()
+{
+  context.clearRect(0,0, 300,300);
+  context.beginPath();
+  context.fillStyle="#0000ff";
+  // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+  context.arc(x,y,20,0,Math.PI*2,true);
+  context.closePath();
+  context.fill();
+  // Boundary Logic
+if( x<0 || x>295) dx=-dx; 
+if( y<0 || y>300) dy=-dy; 
+x+=dx; 
+y+=dy;
+}
+
+
+    
+</script>
+
+   <br>
+ 
+
+
+   <div> <h2 align ="center"><strong><em>Useful Information</em></strong></h2>
+    <style>
+      
+    </style>
+    <p>
+    School Email: mdgingrich2021@email.medfield.net<br>
+    Personal Email: michaelgingrich@gmail.com<br>
+    Phone Number: 508-785-5248
+    </p>
+    </div>
+    <br>
+   <div>
+  <h2 align ="center"><strong><em>About Me</em></strong></h2>
+  <p>
+  Hello! My name is Michael Gingrich. I should be your next employee. I am on the varsity swim team which has taught me alot about teamwork and being a team player. On both the track and swim team my attendance was perfect as I was there everyday without taking a day off. I hope you will alow me to bring my hard work ethic and determination into your company.    
+  
+  
+  
+  
+  </p>
+  </div>
+ <br>
+ <div>
+  
+  
+    <h2 align ="center"><strong><em>GPA and Awards</em></strong></h2>
+    
+  
+        <ul>
+            <li>GPA ?
+            <li> Weighted GPA ?
+            <li>Varity Swimming Award
+            <li>Various Swimming Medals
+            <li>8th Grade History Award
+            
+            
+        </ul>
+            <p>I have worked extra hard to achive excellence and these awards and grades have been markes for me to always know and check my progress.</p>
+        
+       </div>
+       <br>
+       <div>
+      <h2 align ="center"><strong><em>School</em></strong></h2>
+     
+     <ul>
+         <li>Honors Science
+         <li>Going into Honors History
+         <li>A- English Average
+     
+     </ul>
+     <p>I have always tried to stay on top of my grades to do this I always learn from my mistakes and improve upon them.</p>
+     
+     
+     
+     </div>
+     
+     
+       <br>
+       <div>
+      
+       <h2 align ="center"><strong><em>Strengths</em></strong></h2>
+ 
+       <ul>
+         <li>Works well in teams
+         <li>Good swimmer
+         <li>Works well with computers
+         <li>Leadership skills
+         <li>Communicates effectivly 
+           
+           
+           
+       </ul>
+       <p>I have always tried to improve upon myself and work extra hard to make sure my strengths are the best I can possibly achive.</P>
+   </div>
+   <br>
+    <div>
+     <h2 align ="center"><strong><em>Sports</em></strong></h2>
+     <ul>
+         <li>Varsity Swim Team
+         <li>JV Spring Track
+         <li>Crimsome Aquatic (2016-2017)
+         
+         
+         
+         
+     </ul>
+   <p>My sports have taught me a lot about working in a team and leading great teamwork and leadership roles.</p>
+     </div>
+     
+    <br>
+    <div>
+    
+     <h2 align ="center"><strong><em>World Expirences</em></strong></h2>
+     
+     <ul>
+     <li>Hosted an exchange student (2016)
+     <li>Traveled to Tanzania (2016)
+     <li>Traveled to the U.K (2017)
+     <li>Traveled to China on School tour(2018)
+
+     
+     
+     
+     
+     </ul>
+     <p>The expirences I have had around the world and exposure to new cultures and ideas that have inspired me to look inwards and learn how I can use new ideas to improve myself.</p>
+     </div>
+     
+     <br>
+     
+     <div>
+     
+     <h2 align ="center"><strong><em>Computers Skills</em></strong></h2>
+     <ul>
+         <li>Adobe Photoshope
+         <li>Adobe Illustator
+         <li>Javascript
+         <li>HTML
+         
+         
+     </ul>
+     <p>With school classes I have learned very useful skills that help me know how to use many important aspects of the computer. This means I can help whenevery the company needs something done or something malfunctions.</p>
+     
+     </div>
+     
+      <script>
+         var r=Math.random(0,254);
+         var g=Math.random(0,254);
+         var y=Math.random(0,254);
+         hexg = g.toString(16);
+         hexr = r.toString(16);
+         hexy = y.toString(16);
+         var color= parseInt(hexr+hexg+hexy, 16);
+         
+      document.getElementById("demo").style.backgroundColor = color;
+          </script>
+    </body>
+</html>
